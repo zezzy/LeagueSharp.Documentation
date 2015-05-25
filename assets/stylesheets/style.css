@@ -249,6 +249,9 @@ section#content h2 {
   padding-bottom: 6px;
   margin-top: 20px;
 }
+section#content h3 {
+  margin: 10px 0 10px 0;
+}
 section#content h1 {
   font-size: 22px;
   font-weight: normal;
