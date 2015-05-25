@@ -1,4 +1,4 @@
-var app = angular.module("LeagueSharpDocs", ['ngRoute', 'LeagueSharpDocs.services', 'hc.marked', 'gist']).config(function($routeProvider, $locationProvider, markedProvider) {
+var app = angular.module("LeagueSharpDocs", ['ngRoute', 'LeagueSharpDocs.services', 'hc.marked']).config(function($routeProvider, $locationProvider, markedProvider) {
 	"use strict";
 
 	markedProvider.setOptions({
