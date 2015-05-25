@@ -17,11 +17,7 @@ var app = angular.module("LeagueSharpDocs", ['ngRoute', 'LeagueSharpDocs.service
 	})
 	.when('/:name*', {
 		templateUrl: 'templates/default.html',
-	})/*.when('/:name*', {
-		templateUrl: function(urlattr) {
-           return 'templates/docs/' + urlattr.name + '.md';
-        },
-	})*/.when('/404', {
+	}).when('/404', {
 		templateUrl: 'templates/404.html',
 		controller: 'StartController'
 	});
@@ -47,9 +43,4 @@ app.controller("StartController", function($scope, $location, getService, $route
 	  		}	
 	    });
 	 });
-
-	//Watch route changes
-	$scope.$on("$routeChangeError", function(e) {
-	   $location.url('404');
-	});
 });
