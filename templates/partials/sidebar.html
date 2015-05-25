@@ -1,0 +1,16 @@
+<section id="Prologue">
+	<ul class="menu-item">
+		<li ng-repeat="navGroup in navGroups track by navGroups[$index].name">
+			<h2 ng-if="navGroup.name">{{ navGroup.name }}</h2>
+			<h3 ng-if="navGroup.subName">{{ navGroup.subName }}</h3>
+			<ul class="none">	
+				<li ng-repeat="navItem in navGroup.navItems">
+					<a ng-href="#!/{{ navItem.href }}" ng-class="{'active-tab': $route.current.params.name == navItem.href}">{{ navItem.name }}</a> 
+					<ul ng-repeat="subItem in navItem.subMenu track by navItem.subMenu[$index].name" ng-if="navItem.subMenu" class="submenu">
+						<li><a ng-href="#!/{{ subItem.href }}">{{ subItem.name }}</a></li>				
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</section>

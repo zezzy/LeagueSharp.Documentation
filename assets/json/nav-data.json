@@ -1,0 +1,299 @@
+[
+    {
+        "navGroups": [
+            {
+                "name": "Getting started",
+                "navItems": [
+                    {
+                        "name": "Downloading VS",
+                        "href": ""
+                    },
+                    {
+                        "name": "Creating C# Project",
+                        "href": ""
+                    },
+                    {
+                        "name": "Adding References",
+                        "href": ""
+                    }
+                ]
+            }, 
+            {
+                
+                "name": "C# Basics",
+                "navItems": [
+                    {
+                        "name": "Hello World",
+                        "href": ""
+                    },
+                    {
+                        "name": "Variables",
+                        "href": "variables"
+                    },
+                    {
+                        "name" : "Properties",
+                        "href" : ""
+                    },
+                    {
+                        "name": "Events",
+                        "href": ""
+                    },
+                    {
+                        "name": "Methods",
+                        "href": ""
+                    },
+                    {
+                        "name": "Math Operations",
+                        "href": ""
+                    },
+                    {
+                        "name": "Lists",
+                        "href": ""
+                    },
+                    {
+                        "name": "Delegates",
+                        "href": ""
+                    },
+                    {
+                        "name": "Static",
+                        "href": ""
+                    },
+                    {
+                        "name": "Classes",
+                        "href": ""
+                    },
+                    {
+                        "name": "LINQ",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                
+                "name": "Tips and Tricks",
+                "navItems": [
+                    {
+                        "name": "Safe casting to/from objects ",
+                        "href": ""
+                    },
+                    {
+                        "name": "Caching objects",
+                        "href": ""
+                    },
+                    {
+                        "name": "ObjectBrowser",
+                        "href": "",
+                        "subMenu" : [ {
+                            "name": "Searching",
+                            "href": "Searching"
+                        }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "GitHub basics",
+                "navItems": [
+                    {
+                        "name": "Creating GitHub Repository",
+                        "href": ""
+                    },
+                    {
+                        "name": "Pushing Commits",
+                        "href": ""
+                    },
+                    {
+                        "name": "Syncing Commits",
+                        "href": ""
+                    },
+                    {
+                        "name": "Reverting Commits",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "LeagueSharp",
+                "subName": "Helpful Properties",
+                "navItems": [
+                    {
+                        "name": "IsEnemy / IsAlly",
+                        "href": ""
+                    },
+                    {
+                        "name": "Team",
+                        "href": ""
+                    },
+                    {
+                        "name": "IsMe",
+                        "href": ""
+                    },
+                    {
+                        "name": "NetworkId",
+                        "href": ""
+                    },
+                    {
+                        "name": "Pet",
+                        "href": ""
+                    },
+                    {
+                        "name": "IsValid",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "subName": "Useful Events",
+                "navItems": [
+                    {
+                        "name": "Game.OnUpdate",
+                        "href": ""
+                    },
+                    {
+                        "name": "Obj_AI_BaseOnPlayAnimation",
+                        "href": ""
+                    },
+                    {
+                        "name": "Obj_AI_Base.OnProcessSpell",
+                        "href": ""
+                    },
+                    {
+                        "name": "SpellBook.OnCastSpell",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": " ",
+                "subName": "Other",
+                "navItems": [
+                    {
+                        "name": "Issuing Orders",
+                        "href": ""
+                    },
+                    {
+                        "name": "ObjectManager",
+                        "href": ""
+                    },
+                    {
+                        "name": "SpellBooks",
+                        "href": ""
+                    },
+                    {
+                        "name": "Buffs",
+                        "href": ""
+                    },
+                    {
+                        "name": "Health and Mana",
+                        "href": ""
+                    },
+                    {
+                        "name": "Types of GameObject",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "LeagueSharp.SDK",
+                "subName": "Events",
+                "navItems": [
+                    {
+                        "name": "Load.OnLoad",
+                        "href": ""
+                    },
+                    {
+                        "name": "Stealth.OnStealth",
+                        "href": ""
+                    },
+                    {
+                        "name": "Dash.OnDash",
+                        "href": ""
+                    },
+                    {
+                        "name": "InterruptableSpell.OnInterruptableTarget",
+                        "href": ""
+                    },
+                    {
+                        "name": "Turret.OnTurretAttack",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "   ",
+                "subName": "Menu",
+                "navItems": [
+                    {
+                        "name": "Creating a Menu",
+                        "href": ""
+                    },
+                    {
+                        "name": "Adding MenuItems",
+                        "href": ""
+                    },
+                    {
+                        "name": "Adding SubMenus",
+                        "href": ""
+                    },
+                    {
+                        "name": "Getting Menu Values",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "    ",
+                "subName": "Polygons",
+                "navItems": [
+                    {
+                        "name": "Types of Polygons",
+                        "href": ""
+                    },
+                    {
+                        "name": "Updating Polygons",
+                        "href": ""
+                    },
+                    {
+                        "name": "Methods",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "     ",
+                "subName": "Spells",
+                "navItems": [
+                    {
+                        "name": "Prediction",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "      ",
+                "subName": "Signals",
+                "navItems": [
+                    {
+                        "name": "DelayAction",
+                        "href": ""
+                    }
+                ]
+            },
+            {
+                "name": "       ",
+                "subName": "",
+                "navItems": [
+                    {
+                        "name": "MinionManager",
+                        "href": ""
+                    },
+                    {
+                        "name": "ObjectHandler",
+                        "href": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
