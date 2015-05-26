@@ -8,19 +8,19 @@ A variable is a value that can change, depending on conditions or on information
 Example
 -------------
 
-Lets create a variable that will hold the text that we will display in chat when our assembly has loaded.
+Let's create a variable that will hold the text that we will display in chat when our assembly has loaded.
 
 	string welcomeText = "Chevy Loaded!";
  
-Now, lets break down piece by piece this statement to grasp a better understanding.
+Now, let's break down this statement piece-by-piece to grasp a better understanding.
 
 > string
 
-This is our type, it is the type of variable we're creating. In this case, it's a string. A string represents a sequence of zero or more Unicode characters. (Find more types [here](https://msdn.microsoft.com/en-us/library/s1ax56ch.aspx). Look on the left side for all of the types, click on one for examples)
+This is our type. It is the type of variable we're creating. In this case, it's a string. A string represents a sequence of zero or more Unicode characters. (Find more types [here](https://msdn.microsoft.com/en-us/library/s1ax56ch.aspx). Look on the left side for all of the types, click on one for examples)
 
   >welcomeText
 
-  This is called the "Identifier"(or the name, basically). We use this name to do other operations on the string.
+  This is called the "Identifier" (or the name, basically). We use this name to do other operations on the string.
 
   >"Chevy Loaded!";
 
