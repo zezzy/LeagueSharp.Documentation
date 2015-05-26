@@ -6,7 +6,7 @@ LINQ extends the language by the addition of query expressions, which are akin t
 
 ----------
 
-First impressions
+First Impressions
 -------------
 Get list of integer whose value is higher than six.
 
@@ -24,14 +24,14 @@ Get list of integer whose value is higher than six.
 	}
 	// numbersAboveSix: 7,8,9,10,11,12
 	
-> With LINQ(Method syntax)
+> With LINQ (Method syntax)
 
 	List<int> numbers = new List<int>(new int[]{1,2,3,4,5,6,7,8,9,10,11,12});
 	
 	var numbersAboveSix = numbers.Where(number => number > 6);
  	// numbersAboveSix: 7,8,9,10,11,12
 
-> With LINQ(Query syntax)
+> With LINQ (Query syntax)
 
 	List<int> numbers = new List<int>(new int[]{1,2,3,4,5,6,7,8,9,10,11,12});
 	
@@ -40,24 +40,24 @@ Get list of integer whose value is higher than six.
 			              select number;
  	// numbersAboveSix: 7,8,9,10,11,12
 
-As you can see LINQ is much cleaner, easier to read. You can choose which method you want to use. The drawback is that LINQ is usually slower with small collections, but as the collection is grew, LINQ will come into the wiev.
+As you can see, LINQ is much cleaner and easier to read. You can choose which method you want to use. The drawback is that LINQ is usually slower with small collections, but as the collection grows, LINQ will come into the wiev.
 
 ----------
 
 Basic LINQ Operations
 -------------
-### Filtering(**Where**)
+### Filtering (**Where**)
 
-Probably the most common query operation is to apply a filter in the form of a Boolean expression. You can use multiple conditions to get the data. For example list of integer whose value is higher than six OR the number is even.
+The most common query operation is to apply a filter in the form of a Boolean expression. You can use multiple conditions to get the data. For example list of integer whose value is higher than six OR the number is even.
 
 	List<int> numbers = new List<int>(new int[]{1,2,3,4,5,6,7,8,9,10,11,12});
 	
 	var result = numbers.Where(number => number > 6 || number%2==0;
 	// result : 2,4,7,8,9,10,11,12
     
-### Getting data from source(**Select, First, FirstOrDefault, Last, LastOrDefault**)
+### Getting Data from Source (**Select, First, FirstOrDefault, Last, LastOrDefault**)
 
-You can get the wanted data from the collection, for example the strings's length. You can use **First** to get the first element, or **FirstOrDefault** to avoid from errors if the collectiond doesn't contains this element. 
+You can get the wanted data from the collection. For example, the strings's length. You can use **First** to get the first element, or **FirstOrDefault** to avoid from errors if the collection doesn't contain the element. 
 
 	List<string> numbers = new List<string>(new string[] { "One", "Two", "Three", "Four", "Five" });
 	
@@ -76,9 +76,9 @@ You can get the wanted data from the collection, for example the strings's lengt
 	var example4 = numbers.FirstOrDefault(number => number.Length>7);
 	// you can simplify the query
 	
-### Ordering(**OrderBy, OrderByDescending**)
+### Ordering (**OrderBy, OrderByDescending**)
 
-You can sort the data with any of its property. For example the lenght of any string.
+You can sort the data with any of its property. For example, the length of any string.
 
 	List<string> numbers = new List<string>(new string[] { "One", "Two", "Three", "Four","Five"});
 	
@@ -87,9 +87,9 @@ You can sort the data with any of its property. For example the lenght of any st
 
 You can order with booleans too, true => 1, false => 0. So if you sort a collection, it will start with false(0) then it will finish with true(1).
 
-### Grouping(**GroupBy**)
+### Grouping (**GroupBy**)
 
-The group clause enables you to group your results based on a key that you specify. In this example we will separate the number 1-12 to two groups depending it's size.
+The group clause enables you to group your results based on a key that you specify. In this example, we will separate the numbers 1 through 12 to two groups depending its size.
 
 	// Initial array
 	int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
@@ -116,16 +116,16 @@ The group clause enables you to group your results based on a key that you speci
 		Higher than 6 = True:
 		7 8 9 10 11 12
 		
-### Count specified elements(**Count**)
+### Count Specified Elements (**Count**)
 
-Count specified elements in the collection, return as an integer. For example the number of the elements whose higher than six. 
+Count specified elements in the collection, return as an integer. For example, the number of the elements whose higher than six. 
 
 	int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
 	
 	var count = numbers.Count(number => number > 6);
 	//count:6
 
-### Check if it contains an element(**Any**)
+### Check if it Contains an Element (**Any**)
 
 It determines if any element in a collection matches a certain condition, and it will return with true or false.
 
